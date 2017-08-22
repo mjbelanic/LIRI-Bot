@@ -3,7 +3,7 @@ var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 var request = require("request");
 var nodeArgs = process.argv;
-var action = process.argv[2];//'spotify-this-song';//
+var action = process.argv[2];
 var params = {screen_name: 'LIRI_HW'};
 var fs = require('fs');
 

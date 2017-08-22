@@ -30,3 +30,8 @@ Artist: Backstreet Boys
 Song Name: I Want It That Way
 Preview Link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=c7012aa702754462812b1ec179239b59
 Album:The Hits--Chapter One
+SONG DATA
+Artist: Harry Styles
+Song Name: Sign of the Times
+Preview Link: https://p.scdn.co/mp3-preview/9801b9239ad1b833f1317574ee55b9d7b8426ff1?cid=c7012aa702754462812b1ec179239b59
+Album:Sign of the Times
