@@ -35,3 +35,18 @@ Artist: Harry Styles
 Song Name: Sign of the Times
 Preview Link: https://p.scdn.co/mp3-preview/9801b9239ad1b833f1317574ee55b9d7b8426ff1?cid=c7012aa702754462812b1ec179239b59
 Album:Sign of the Times
+SONG DATA
+Artist: Ace of Base
+Song Name: The Sign
+Preview Link: https://p.scdn.co/mp3-preview/9801b9239ad1b833f1317574ee55b9d7b8426ff1?cid=c7012aa702754462812b1ec179239b59
+Album:The Sign (US Album) [Remastered]
+SONG DATA
+Artist: Ace of Base
+Song Name: The Sign
+Preview Link: https://p.scdn.co/mp3-preview/9801b9239ad1b833f1317574ee55b9d7b8426ff1?cid=c7012aa702754462812b1ec179239b59
+Album:The Sign (US Album) [Remastered]
+SONG DATA
+Artist: Don McLean
+Song Name: American Pie
+Preview Link: null
+Album:The Best Of Don McLean

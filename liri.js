@@ -52,28 +52,40 @@ function liriCommand(action, input){
     }
     
     if(action === 'spotify-this-song'){
+        var found = false;
         if(input === ""){
             input = "The Sign";
         }
-        spotify.search({ type: 'track', query: input, limit: 1 }, function(err, data) {
+        spotify.search({ type: 'track', query: input}, function(err, data) {
             if (err) {
                 return console.log('Error occurred: ' + err);
             }
             var retData = (JSON.stringify(data));
-            var artist = "Artist: " + JSON.parse(retData).tracks.items[0].album.artists[0].name;
-            var song = "Song Name: " + JSON.parse(retData).tracks.items[0].name;
-            var preview = "Preview Link: " + JSON.parse(retData).tracks.items[0].preview_url;
-            var album = "Album:" + JSON.parse(retData).tracks.items[0].album.name
-            var logString = "SONG DATA\n" + artist + "\n" + song + "\n" + preview + "\n" + album + "\n";
-            console.log(artist);
-            console.log(song);
-            console.log(preview);
-            console.log(album);
+            for(var i = 0; i < JSON.parse(retData).tracks.items.length; i++){
+                if(input === JSON.parse(retData).tracks.items[i].name){
+                    var artist = "Artist: " + JSON.parse(retData).tracks.items[i].album.artists[0].name;
+                    var song = "Song Name: " + JSON.parse(retData).tracks.items[i].name;
+                    var preview = "Preview Link: " + JSON.parse(retData).tracks.items[0].preview_url;
+                    var album = "Album:" + JSON.parse(retData).tracks.items[i].album.name
+                    var logString = "SONG DATA\n" + artist + "\n" + song + "\n" + preview + "\n" + album + "\n";
+                    console.log("There was a match!")
+                    console.log(artist);
+                    console.log(song);
+                    console.log(preview);
+                    console.log(album);
 
-            fs.appendFile('log.txt' , logString, function(err){
-                if(err) throw err;
-                console.log('File Saved to log.txt!');
-            });
+                    fs.appendFile('log.txt' , logString, function(err){
+                        if(err) throw err;
+                        console.log('File Saved to log.txt!');
+                    });
+                    found = true;
+                    break;
+                }
+
+            }
+            if(!found){
+                console.log("Sorry, no song matching that name was found.");
+            }
         });
 }
     
